@@ -1,0 +1,46 @@
+{% extends 'base.jinja' %}
+{% block content %}
+<section class="py-5">
+    <div class="container">
+        <div class="row mb-5">
+            
+            <div class="col-lg-6">
+                <!-- PRODUCT SLIDER-->
+                <div class="row m-sm-0">
+
+                    <div class="col-sm-10 order-1 order-sm-2">
+                        <div class="swiper product-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide h-auto">
+                                    <a class="glightbox product-view" href="/{{product.image}}" data-gallery="gallery1" data-glightbox="{{product.name}}"><img class="img-fluid" src="/{{product.image}}" alt="{{product.name}}" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PRODUCT DETAILS-->
+            <div class="col-lg-6">
+                <h1>{{product.name}}</h1>
+                <p class="text-muted lead">${{product.price}}</p>
+                <p class="text-sm mb-4">{{product.description}}</p>
+            </div>
+        </div>
+        <!-- RELATED PRODUCTS-->
+        <h2 class="h5 text-uppercase mb-4">Related products</h2>
+        <div class="row">
+            {% for product in random_products %}
+                <div class="col-lg-3 col-sm-6">
+                    <div class="product text-center skel-loader">
+                        <div class="d-block mb-3 position-relative">
+                            <a class="d-block" href="/shop/product/{{product.id}}"><img class="img-fluid w-100" src="/{{product.image}}" alt="{{product.name}}" /></a>
+                        </div>
+                        <h6><a class="reset-anchor" href="/shop/product/{{product.id}}">{{product.name}}</a></h6>
+                        <p class="small text-muted">${{product.price}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock content %}

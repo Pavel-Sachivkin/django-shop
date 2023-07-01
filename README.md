@@ -13,6 +13,7 @@
 ![Linux](https://img.shields.io/badge/-Linux-090909?style=for-the-badge&logo=Linux)
 ![Ubuntu](https://img.shields.io/badge/-Ubuntu-090909?style=for-the-badge&logo=Ubuntu)
 ![Git](https://img.shields.io/badge/-Git-090909?style=for-the-badge&logo=Git)
+![Jinja](https://img.shields.io/badge/-Jinja-090909?style=for-the-badge&logo=Jinja)
 ![CSS3](https://img.shields.io/badge/-CSS3-090909?style=for-the-badge&logo=CSS3)
 ![HTML5](https://img.shields.io/badge/-HTML5-090909?style=for-the-badge&logo=HTML5)
 ![Bootstrap](https://img.shields.io/badge/-bootstrap-090909?style=for-the-badge&logo=bootstrap)
